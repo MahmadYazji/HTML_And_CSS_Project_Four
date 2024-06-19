@@ -68,6 +68,44 @@ ul {
     height: 3px;
     background-color: black;
 }
+.toggle-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.toggle-switch {
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: var(--main-transation);
+    cursor: pointer;
+}
+.toggle-switch::before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 4px;
+    left: 4px;
+    color: #aaa;
+    transition: var(--main-transation);
+}
+.toggle-checkbox:checked + .toggle-switch {
+    background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+    content: "\f00c";
+    left: 50px;
+    color: var(--blue-color);
+}
 /* End Components */
 /* End Global Rules */
 /* Start Sidebar */
@@ -180,6 +218,7 @@ ul {
     margin-left: 5px;
     width: 160px;
     transition: width var(--main-transation);
+    outline: none;
 }
 .content .head .search input::placeholder{
     font-size: 13px;
@@ -1103,6 +1142,351 @@ table .success span {
 }
 /* End Table */
 /* End Content */
+/* Start Settings Page */
+.site-control {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.site-control h2 {
+    margin: 0 0 10px;
+}
+.site-control p {
+    color: #888;
+    margin: 0 0 20px;
+}
+.site-control > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.site-control div p {
+    font-size: 13px;
+    margin: 5px 0 13px;
+}
+.site-control > div div:last-child label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.site-control textarea {
+    border-color: #eee;
+    border-radius: 10px;
+    min-height: 140px;
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    outline: none;
+}
+.site-control textarea::placeholder {
+    font-size: 13px;
+}
+/* End Settings Page */
+/* Start General Info */
+.general-info {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.general-info h2 {
+    margin:  0 0 10px;
+}
+.general-info p {
+    color: #888;
+}
+.general-info div {
+    margin: 0 0 15px;
+}
+.general-info label {
+    display: block;
+    color: #888;
+    margin: 0 0 10px;
+}
+.general-info input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    border: 1px solid #eee;
+}
+.general-info input[type = "email"] {
+    cursor: no-drop;
+    width: calc(100% - 80px);
+    margin-right: 10px;
+    background-color: #f0f4f8;
+    color: #bbb;
+}
+/* .general-info :disabled {
+} */
+.general-info input::placeholder {
+    font-size: 13px;
+}
+.general-info a {
+    color: blue;
+}
+/* End General Info */
+/* Start Security Info */
+.security-info {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.security-info h2 {
+    margin: 0 0 10px;
+}
+.security-info p {
+    margin:  0 0 20px;
+    color: #888;
+}
+.security-info > div {
+    padding: 0 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.security-info > div:not(:last-child) {
+    border-bottom: 1px solid #eee;
+    margin: 0 0 15px;
+}
+.security-info > div p {
+    margin: 5px 0 13px;
+    font-size: 13px;
+}
+.security-info > div:nth-of-type(1) a {
+    color: white;
+    background-color: var(--blue-color);
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+.security-info > div:nth-of-type(1) a:hover {
+    background-color: var(--blue-color-alt);
+}
+.security-info > div:last-of-type a {
+    color: black;
+    background-color: #eee;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+.security-info > div:nth-of-type(2) label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* End Security Info */
+/* Start Social Media  */
+.social-info {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.social-info h2{
+    margin: 0 0 10px;
+}
+.social-info p{
+    margin: 0 0 20px;
+    color: #888;
+}
+.social-info div {
+    border-radius: 6px;
+    margin: 0 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.social-info div i {
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    color: var(--grey-color);
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--main-transation);
+}
+.social-info  div:focus-within i {
+    color: black;
+}
+.social-info div input:focus {
+    outline: none;
+}
+.social-info div input {
+    flex: 1;
+    padding: 1px 1px 2px 10px;
+    border: 1px solid #ddd;
+    border-radius: 0 6px 6px 0;
+    height: 40px;
+    background-color: #f6f6f6;
+}
+.social-info div input::placeholder {
+    color: #888;
+    font-size: 14px;
+}
+/* End Social Media  */
+/* Start Widgets */
+.widgets {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.widgets h2{
+    margin: 0 0 10px;
+}
+.widgets p{
+    margin: 0 0 20px;
+    color: #888;
+}
+.widgets div {
+    margin: 0 0 15px;
+}
+.widgets div input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.widgets div label {
+    cursor: pointer;
+    padding-left: 30px;
+    position: relative;
+}
+.widgets div label::before,
+.widgets div label::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    border-radius: 4px;
+}
+.widgets div label::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--grey-color);
+}
+.widgets div label:hover::before {
+    border-color: var(--blue-color-alt);
+}
+.widgets div label::after {
+    content: "\f00c";
+    font-family: var(--fa-style-family-classic);
+    font-weight: 900;
+    background-color: var(--blue-color);
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) rotate(260deg);
+    transition: var(--main-transation);
+}
+.widgets div input:checked + label::after {
+    transform: scale(1) rotate(0);
+}
+/* End Widgets */
+/* Start Backup */
+.backup-manager {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.backup-manager h2{
+    margin: 0 0 10px;
+}
+.backup-manager p {
+    margin: 0 0 20px;
+    color: #888;
+}
+.backup-manager .date {
+    margin: 0 0 15px;
+}
+.backup-manager .date input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.backup-manager .date label {
+    cursor: pointer;
+    padding-left: 30px;
+    position: relative;
+}
+.backup-manager .date label::before,
+.backup-manager .date label::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    border-radius: 50%;
+}
+.backup-manager .date label::before {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--grey-color);
+    left: 0;
+    margin-top: -11px;
+}
+.backup-manager .date label:hover::before {
+    border-color: var(--blue-color-alt);
+}
+.backup-manager .date label::after {
+    background-color: var(--blue-color);
+    width: 12px;
+    height: 12px;
+    transition: var(--main-transation);
+    left: 5px;
+    margin-top: -6px;
+    transform: scale(0);
+    transition: var(--main-transation);
+}
+.backup-manager .date input:checked + label::before {
+    border-color: var(--blue-color-alt);
+}
+.backup-manager .date input:checked + label::after {
+    transform: scale(1);
+
+}
+.backup-manager .servers input {
+    -webkit-appearance:none ;
+    appearance: none;
+}
+.backup-manager .servers {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0 0;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+@media (max-width: 776px) {
+    .backup-manager .servers {
+        display: block;
+    }
+}
+.backup-manager .server {
+    margin: 0 0 15px;
+    border: 2px solid #eee;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.backup-manager .server i{
+    display: block;
+    margin: 0 0 10px;
+    margin: 0 auto 10px;
+}
+.backup-manager .server label{
+    margin: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+.backup-manager .servers input:checked + .server {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+/* End Backup */
 /* Start Animation */
 @keyframes change-color {
     from {
