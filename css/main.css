@@ -252,7 +252,7 @@ ul {
     margin-left: 15px;
 }
 /* Start Wrapper */
-.content .wrapper {
+.wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     gap: 20px;
@@ -260,7 +260,7 @@ ul {
     margin-right: 20px;
 }
 @media(max-width: 767px) {
-    .content .wrapper  {
+    .wrapper  {
         grid-template-columns:minmax(200px, 1fr); /*important*/
         gap: 10px;
         margin-left: 10px;
@@ -341,7 +341,7 @@ ul {
 .content .wrapper .welcome .body span {
     display: block;
     font-size: 14px;
-    color: #888;
+    color: var(--grey-color);
     margin-top: 10px;
 }
 .content .wrapper .welcome a {
@@ -651,7 +651,7 @@ display: block;
 .latest-news p {
     margin: 0;
     font-size: 14px;
-    color: #888;
+    color: var(--grey-color);
 }
 .latest-news .btn {
     background-color: #eee;
@@ -701,7 +701,7 @@ display: block;
 margin: 0 0 10px;
 }
 .tasks .task p {
-    color: #888;
+    color: var(--grey-color);
     margin: 0;
 }
 .tasks .task i {
@@ -727,7 +727,7 @@ margin: 0 0 10px;
     align-items: center;
 }
 .top-search .head {
-    color: #888;
+    color: var(--grey-color);
     margin:  0 0 10px;
     padding: 0;
 }
@@ -772,7 +772,7 @@ margin: 0 0 10px;
     display: block;
 }
 .uploads ul li span:nth-child(2) {
-    color: #888;
+    color: var(--grey-color);
     font-size: 15px;
 }
 .uploads li div:nth-of-type(2) {
@@ -897,7 +897,7 @@ margin: 0 0 10px;
 }
 .reminders li div span {
     font-size: 13px;
-    color: #888;
+    color: var(--grey-color);
 }
 
 /* End Reminders */
@@ -926,7 +926,7 @@ margin: 0 0 10px;
     margin-bottom: 5px;
 }
 .post .info span:last-child {
-    color: #888;
+    color: var(--grey-color);
 }
 .post .post-content {
     text-align: center;
@@ -941,7 +941,7 @@ margin: 0 0 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #888;
+    color: var(--grey-color);
 }
 /* End Post */
 /* Start Social */
@@ -1152,7 +1152,7 @@ table .success span {
     margin: 0 0 10px;
 }
 .site-control p {
-    color: #888;
+    color: var(--grey-color);
     margin: 0 0 20px;
 }
 .site-control > div {
@@ -1193,14 +1193,14 @@ table .success span {
     margin:  0 0 10px;
 }
 .general-info p {
-    color: #888;
+    color: var(--grey-color);
 }
 .general-info div {
     margin: 0 0 15px;
 }
 .general-info label {
     display: block;
-    color: #888;
+    color: var(--grey-color);
     margin: 0 0 10px;
 }
 .general-info input {
@@ -1238,7 +1238,7 @@ table .success span {
 }
 .security-info p {
     margin:  0 0 20px;
-    color: #888;
+    color: var(--grey-color);
 }
 .security-info > div {
     padding: 0 0 15px;
@@ -1286,7 +1286,7 @@ table .success span {
 }
 .social-info p{
     margin: 0 0 20px;
-    color: #888;
+    color: var(--grey-color);
 }
 .social-info div {
     border-radius: 6px;
@@ -1323,7 +1323,7 @@ table .success span {
     background-color: #f6f6f6;
 }
 .social-info div input::placeholder {
-    color: #888;
+    color: var(--grey-color);
     font-size: 14px;
 }
 /* End Social Media  */
@@ -1338,7 +1338,7 @@ table .success span {
 }
 .widgets p{
     margin: 0 0 20px;
-    color: #888;
+    color: var(--grey-color);
 }
 .widgets div {
     margin: 0 0 15px;
@@ -1399,7 +1399,7 @@ table .success span {
 }
 .backup-manager p {
     margin: 0 0 20px;
-    color: #888;
+    color: var(--grey-color);
 }
 .backup-manager .date {
     margin: 0 0 15px;
@@ -1526,7 +1526,7 @@ table .success span {
     margin: 0 0 10px;
 }
 .overview .avatar-box p {
-    color: #888;
+    color: var(--grey-color);
 }
 .overview .avatar-box p:first-of-type{
     margin: 10px 0 16px;
@@ -1570,7 +1570,7 @@ table .success span {
 .overview .info .box h4 {
     width: 100%;
     font-size: 15px;
-    color: #888;
+    color: var(--grey-color);
     font-weight: normal;
     margin: 0;
 }
@@ -1584,7 +1584,7 @@ table .success span {
     font-size: 14px;
 }
 .overview .info .box div span:first-child{
-    color: #888;
+    color: var(--grey-color);
     margin-right: 2px;
 }
 .overview .info .box div label .toggle-switch{
@@ -1613,7 +1613,7 @@ table .success span {
 }
 .other-data .skills p {
     margin: 0 0 20px;
-    color: #888;
+    color: var(--grey-color);
 }
 
 @media (max-width: 776px) {
@@ -1644,7 +1644,7 @@ table .success span {
 }
 .other-data .activities p {
     margin: 0 0 20px;
-    color: #888;
+    color: var(--grey-color);
 
 }
 .other-data .activities .activity{
@@ -1664,7 +1664,7 @@ table .success span {
     margin: 0 0 20px;
 }
 .other-data .activities .activity span:last-child{
-    color: #888;
+    color: var(--grey-color);
     margin-top: 10px;
 }
 .other-data .activities .activity img{
@@ -1691,6 +1691,119 @@ table .success span {
 }
 /* End Other data */
 /* End Profile Page */
+/* Start Projects Page */
+.projects-page .card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+.projects-page .card .date{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: var(--grey-color);
+    font-size: 13px;
+}
+.projects-page .card h2{
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+}
+.projects-page .card p{
+    color: var(--grey-color);
+    font-size: 14px;
+    margin: 10px 0;
+}
+.projects-page .card .team {
+    min-height: 80px;
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+/* .projects-page .card .team a{
+    min-height: 80px;
+} */
+.projects-page .card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: -15px;
+    transition: var(--main-transation);
+    position: relative;
+}
+.projects-page .card img:hover {
+    z-index: 3;
+}
+.projects-page .card .do {
+    padding: 15px 0 0;
+    margin: 15px 0 0;
+    border-top: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+@media (max-width: 776px) {
+    .projects-page .card .do {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+.projects-page .card .do span {
+    padding: 4px 10px;
+    background-color: #eee;
+    border-radius: 6px;
+    margin-left: 5px;
+}
+@media (max-width: 776px) {
+    .projects-page .card .do span {
+        margin-top: 15px;
+    }
+}
+.projects-page .card .info {
+    display: flex;
+    align-items: center;
+    padding: 15px 0 0;
+    margin: 15px 0 0;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+}
+@media (max-width: 776px) {
+    .projects-page .card .info {
+        flex-direction: column;
+    }
+}
+.projects-page .card .info .prog{
+    width: 260px;
+    height: 8px;
+    background-color: #eee;
+    position: relative;
+    border-radius: 6px;
+}
+.projects-page .card .info .prog span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 8px;
+    background-color: var(--red-color);
+    border-radius: 6px;
+}
+.projects-page .card .info .prog .lvl-green{
+    background-color: var(--green-color);
+}
+.projects-page .card .info .prog .lvl-blue{
+    background-color: var(--blue-color);
+}
+.projects-page .card .info div:last-child{
+    color: var(--grey-color);
+}
+@media (max-width: 776px) {
+    .projects-page .card .info div:last-child {
+        margin-top: 15px;
+    }
+}
+/* End Projects Page */
 /* Start Animation */
 @keyframes change-color {
     from {
