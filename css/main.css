@@ -1870,6 +1870,106 @@ table .success span {
     color: white;
 }
 /* End Courses Page */
+/* Start Friends Page */
+.friends-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@media(max-width: 767px) {
+    .friends-wrapper   {
+        grid-template-columns:minmax(200px, 1fr); /*important*/
+        gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+.friends-page  .card{
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+}
+.friends-page  .card .contact{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.friends-page  .card .contact i{
+    background-color: #eee;
+    color: var(--grey-color);
+    border-radius: 50%;
+    padding: 10px;
+    transition: var(--main-transation);
+    cursor: pointer;
+}
+.friends-page  .card .contact i:hover{
+    background-color: var(--blue-color);
+    color: white;
+}
+.friends-page  .card .main-image{
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+.friends-page  .card .main-image img{
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+.friends-page  .card .main-image h4{
+    margin: 0;
+}
+.friends-page  .card .main-image p{
+    font-size: 13px;
+    color: var(--grey-color);
+    margin: 5px 0 13px;
+}
+.friends-page  .card .icons{
+    margin: 15px 0;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.friends-page  .card .icons .vip{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: var(--orange-color);
+    opacity: 0.2;
+    font-weight: bold;
+}
+.friends-page  .card .icons div{
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+.friends-page  .card .icons div i{
+    margin-right: 5px;
+}
+.friends-page .card .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.friends-page .card .info span {
+    color: var(--grey-color);
+}
+.friends-page .card .info div a {
+    padding: 4px 10px;
+    color: white;
+    border-radius: 6px;
+    background-color: var(--blue-color);
+}
+.friends-page .card .info div a:last-child {
+    background-color: var(--red-color);
+}
+
+
+/* End Friends Page */
 /* Start Animation */
 @keyframes change-color {
     from {
