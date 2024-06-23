@@ -1487,6 +1487,210 @@ table .success span {
     color: var(--blue-color);
 }
 /* End Backup */
+/* Start Profile Page */
+/* Start Overview */
+.profile-page {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.overview {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px ;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+}
+@media (max-width: 776px) {
+    .overview {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.overview .avatar-box{
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid #eee;
+}
+@media (max-width: 776px) {
+    .overview .avatar-box{
+        border: none;
+    }
+}
+.overview .avatar-box img{
+    width: 120px;
+    height: 120px;
+    margin: 0 0 10px;
+}
+.overview .avatar-box p {
+    color: #888;
+}
+.overview .avatar-box p:first-of-type{
+    margin: 10px 0 16px;
+}
+.overview .avatar-box p:last-of-type{
+    margin: 0;
+    font-size: 13px;
+}
+.overview .avatar-box .level {
+    height: 6px;
+    width: 70%;
+    background-color: #eee;
+    position: relative;
+    border-radius: 6px;
+    margin: 0 auto;
+}
+.overview .avatar-box .level span {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background-color: var(--blue-color);
+    border-radius: 6px;
+}
+.overview .avatar-box .rating {
+    margin: 10px 0;
+    font-size: 13px;
+    color: var(--orange-color);
+}
+.overview .info .box {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    transition: var(--main-transation);
+}
+.overview .info .box:hover {
+    background-color: #f9f9f9;
+}
+.overview .info .box:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+.overview .info .box h4 {
+    width: 100%;
+    font-size: 15px;
+    color: #888;
+    font-weight: normal;
+    margin: 0;
+}
+.overview .info .box div{
+    display: flex;
+    align-items: center;
+    min-width: 250px;
+    padding: 10px 0 0;
+}
+.overview .info .box div span{
+    font-size: 14px;
+}
+.overview .info .box div span:first-child{
+    color: #888;
+    margin-right: 2px;
+}
+.overview .info .box div label .toggle-switch{
+    min-width: 74px;
+}
+/* End Overview */
+/* Start Other data */
+.other-data {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+@media (max-width: 776px) {
+    .other-data{
+        flex-direction: column;
+    }
+}
+.other-data .skills {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.other-data .skills h2 {
+    margin: 0 0 10px;
+}
+.other-data .skills p {
+    margin: 0 0 20px;
+    color: #888;
+}
+
+@media (max-width: 776px) {
+    .other-data .skills ul {
+        text-align: center;
+}
+}
+.other-data .skills li {
+    padding: 15px 0;
+
+}
+.other-data .skills li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+.other-data .skills li span {
+    background-color: #eee;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+.other-data .activities {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+}
+.other-data .activities h2 {
+    margin: 0 0 10px;
+}
+.other-data .activities p {
+    margin: 0 0 20px;
+    color: #888;
+
+}
+.other-data .activities .activity{
+    display: flex;
+
+}
+@media (max-width: 776px) {
+    .other-data .activities .activity {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+}
+}
+.other-data .activities .activity:not(:last-child){
+    border-bottom: 1px solid #eee;
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+}
+.other-data .activities .activity span:last-child{
+    color: #888;
+    margin-top: 10px;
+}
+.other-data .activities .activity img{
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+}
+.other-data .activities .activity span {
+    display: block;
+}
+.other-data .activities .activity > div {
+    max-width: 300px;
+}
+.other-data .activities .activity .date {
+    text-align: right;
+    margin-left: auto;
+}
+@media (max-width: 776px) {
+    .other-data .activities .activity .date {
+        margin: auto;
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+/* End Other data */
+/* End Profile Page */
 /* Start Animation */
 @keyframes change-color {
     from {
