@@ -353,6 +353,10 @@ ul {
     border-radius: 6px;
     font-size: 14px;
     margin: 0 15px 15px auto;
+    transition: var(--main-transation);
+}
+.content .wrapper .welcome a:hover {
+    background-color: var(--blue-color-alt);
 }
 /* End Welcome */
 /* Start Quick Draft */
@@ -397,7 +401,11 @@ ul {
     padding: 4px 10px;
     font-size: 14px;
     margin:0 0 10px auto;
-    
+    cursor: pointer;
+    transition: var(--main-transation);
+}
+.quick-draft form input[type = "submit"]:hover{
+    background-color: var(--blue-color-alt);
 }
 /* End Quick Draft */
 /* Start Yearly  */
@@ -2037,17 +2045,24 @@ table .success span {
     margin-top: 5px;
 }
 .files-sections .files-stats .size{
-        margin-left: auto;
-        color: var(--grey-color);
+    margin-left: auto;
+    color: var(--grey-color);
 }
 .files-sections .files-stats a{
     display: block;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 6px;
-        background-color: var(--blue-color);
-        margin: 15px auto 0;
-        width: fit-content;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    background-color: var(--blue-color);
+    margin: 15px auto 0;
+    width: fit-content;
+    transition: var(--main-transation);
+}
+.files-sections .files-stats a:hover{
+    background-color: var(--blue-color-alt);
+}
+.files-sections .files-stats a:hover i{
+    animation: go-up 0.8s infinite;
 }
 .files-content {
     display: grid;
@@ -2199,6 +2214,17 @@ table .success span {
     }
     to {
         background-color: white;
+    }
+}
+@keyframes go-up {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 /* End Animation */
